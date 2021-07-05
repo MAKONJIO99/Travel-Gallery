@@ -2,4 +2,7 @@ config==0.3.9
 dj-database-url==0.5.0
 Django==1.11
 django-bootstrap3==10.0.1
+Pillow==8.3.0
+psycopg2==2.9.1
+python-dotenv==0.18.0
 pytz==2018.5
