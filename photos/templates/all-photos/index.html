@@ -4,8 +4,9 @@
 
 {% block content %}
 <div class="container-fluid landing">
-    <h2 class="text-center imagea">My personal gallery</h2>
-    <a href="/admin" class="scroll"><button class="btn btn-sm btn-info image D-block mx-auto">Admin</button></a>
+    <h2 style="background-color: aqua;" class="text-center images">MY TRAVEL GALLERY</h2>
+   
+    
 </div>
 
 <div class="container-fluid boded" id="b">
@@ -14,12 +15,14 @@
 
         <div class="row">
             <div class="col-md-7">
-                <h3>PHOTOS</h3>
+                <h1>Full Gallery</h1><br>
+                <h4>You can click on the images for image details you can as well as search for category in the search bar eg. Africa</h4>
+
             </div>
             <div class="col-md-5">
             <span id="locations">
                 {% for location in locations %}
-                    <a class="btn btn-outline-info btn-sm" id="btn"
+                    <a class="btn btn-primary me-2" id="btn"
                        href="/location/{{location.name}}">{{location.name}}</a>
                 {%endfor%}
              </span>

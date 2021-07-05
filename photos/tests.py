@@ -4,13 +4,13 @@ from .models import Image,Location,Category
 # Create your tests here.
 class TestImage(TestCase):
     def setUp(self):
-        self.location = Location(name='Naivasha')
+        self.location = Location(name='New York')
         self.location.save_location()
 
-        self.category = Category(name='home')
+        self.category = Category(name='africa')
         self.category.save_category()
 
-        self.image_test = Image(id=1, name='image', description='this is a testing image', location=self.location,
+        self.image_test = Image(id=1, name='image', description=' image description', location=self.location,
                                 category=self.category)
     def test_instance(self):
         self.assertTrue(isinstance(self.image_test, Image)) 
@@ -60,9 +60,9 @@ class TestLocation(TestCase):
     #     self.assertTrue(len(locations) > 1)
 
     def test_update_location(self):
-        new_location = 'kericho'
+        new_location = 'Turkey'
         self.location.update_location(self.location.id, new_location)
-        changed_location = Location.objects.filter(name='kericho')
+        changed_location = Location.objects.filter(name='Turkey')
         self.assertTrue(len(changed_location) > 0)
 
     def test_delete_location(self):
@@ -77,7 +77,7 @@ class TestLocation(TestCase):
 
 class CategoryTestClass(TestCase):
     def setUp(self):
-        self.category = Category(name='home')
+        self.category = Category(name='Africa')
         self.category.save_category()
 
     def test_instance(self):
