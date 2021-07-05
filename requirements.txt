@@ -1,0 +1,5 @@
+config==0.3.9
+dj-database-url==0.5.0
+Django==1.11
+django-bootstrap3==10.0.1
+pytz==2018.5
