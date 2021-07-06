@@ -28,7 +28,7 @@ SECRET_KEY = '!p4lne5j-5n1j+q5juzd5a!=*i7svz+zat(m8m_gi)a7cvrw5e'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = '*'
+ALLOWED_HOSTS = ['https://travel-photos.herokuapp.com']
 
 
 # Application definition
